@@ -16,6 +16,8 @@
  <!-- The JavaScript -->  
 <script type="text/javascript">
 	$(document).ready(function(){
+		
+		alert("!");
 		$('.a').click(function(event){
 			alert("!");
 			var $anchor = $(this);
@@ -25,9 +27,9 @@
 			}, 1500,'easeInOutExpo');
 
 			event.preventDefault();
-		)});
+			
+		});
 	});
-
 </script>
 		
 <body>
