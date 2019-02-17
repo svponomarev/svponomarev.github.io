@@ -12,25 +12,6 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'>
 
 </head>
-
- <!-- The JavaScript -->  
-<script type="text/javascript">
-	$(document).ready(function(){
-		
-		alert("!");
-		$('.a').click(function(event){
-			alert("!");
-			var $anchor = $(this);
-			
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1500,'easeInOutExpo');
-
-			event.preventDefault();
-			
-		});
-	});
-</script>
 		
 <body>
 <div id="header">
@@ -139,5 +120,26 @@
 <!--End Connect Section--> 
 
 </div>
+
+ <!-- The JavaScript -->  
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		alert("!");
+	});
+	
+	$('.a').click(function(event){
+			alert("!");
+			var $anchor = $(this);
+			
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1500,'easeInOutExpo');
+
+			event.preventDefault();
+			
+		});
+</script>
+
 </body>
 </html>
