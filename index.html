@@ -14,6 +14,21 @@
 
 </head>
 
+ <!-- The JavaScript -->  
+<script type="text/javascript">
+	$(function() {
+		$('#main-menu li a').bind('click',function(event){
+			var $anchor = $(this);
+			
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1500,'easeInOutExpo');
+
+			event.preventDefault();
+		});
+	});
+</script>
+		
 <body>
 <div id="header">
 	<div id="logo"><a href="#"><img src="images/logo_human.png"></a></div>
@@ -121,25 +136,5 @@
 <!--End Connect Section--> 
 
 </div>
-
- <!-- The JavaScript -->  
-        <script type="text/javascript">
-    		$(function() {
-                $('#main-menu li a').bind('click',function(event){
-                    var $anchor = $(this);
-                    
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1500,'easeInOutExpo');
-
-                    event.preventDefault();
-                });
-            });
-			
- 			 $(document).ready(function(){
-    		$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false, deeplinking: false});
-  			});
-
-        </script>
 </body>
 </html>
