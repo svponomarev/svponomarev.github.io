@@ -1,144 +1,188 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Svyatoslav Ponomarev - Personal Resume</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
-<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<head>
+		<title>Outdoor RGB-D SLAM Dataset</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body class="homepage">
 
-<script type='text/javascript' src="js/jquery-3.3.1.min.js"></script>	
-<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>	
+	<!-- Header -->
+		<div id="header">
+			<div id="nav-wrapper"> 
+			</div>
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">ORDSLAM</a></h1>
+					<span class="tag">Outdoor RGB-D SLAM Dataset</span>
+				</div>
+			</div>
+		</div>
 
- <!-- The JavaScript -->  
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#main-menu li a').click(function(event){
-			var $anchor = $(this);
-			
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1500,'easeInOutExpo');
+	<!-- Featured -->
+		<div id="featured">
+			<div class="container">
+				<header>
+					<h3>База данных ORDSLAM для сравнения эффективности RGB-D SLAM алгоритмов вне помещения</h3>
+					<h4> С. В. Пономарев, С. А. Дроздов</h4>
+					<h6>Институт физиологии им. И.П. Павлова РАН, Санкт-Петербург</h6>
+				</header>
+				<p align="justify">
+				<strong>Добро пожаловать!</strong> На данной странице вы сможете скачать текущую версию датасета, снятого с помощью стереокамеры высокого разрешения <a href="https://www.stereolabs.com/zed/">ZED</a>, для сравнения точности алгоритмов одновременной локализации и построения карты местности (simultaneous localization and mapping, SLAM).</p>
+				<p align="justify">
+				Представленный датасет описан в следующей статье: </p>
+				<p align="justify">Пономарев С.В., Дроздов С.А. База данных ORDSLAM для сравнения эффективности RGB-D SLAM алгоритмов вне помещения // Оптический журнал - 2020. - Т. 87. - № 10. <a href="https://www.stereolabs.com/zed/">[PDF]</a></p>
+				<p align="justify"> Подготовлена новая база данных, позволяющая сравнить эффективность алгоритмов SLAM в условиях открытой местности, характеризующейся высокой априорной неопределенностью. Изображения отсняты с помощью стереокамеры высокого разрешения, по размеченным вручную ключевым точкам рассчитаны эталонные траектории движения камеры внутри сцены. Полученная база данных изображений может быть использована для сравнения робастности поведения SLAM-алгоритмов на открытом воздухе и в условиях сложного освещения.</p>
+				<hr />
+				<div class="row">
+					<section class="4u">
+						<span class="pennant"><span class="fa fa-file-text-o"></span></span>
+						<h3>Состав базы данных</h3>
+						<p>Описание процесса съемки. Количество изображений. Формат скачиваемых данных.</p>
+						<a href="#description" class="button button-style1">Перейти</a>
+					</section>
+					<section class="4u">
+						<span class="pennant"><span class="fa fa-cloud-download"></span></span>
+						<h3>Отдельные сцены</h3>
+						<p>Скачать базу данных отдельными частями, разделенными по времени съемки.</p>
+						<a href="#scenes" class="button button-style1">Перейти</a>
+					</section>
+					<section class="4u">
+						<span class="pennant"><span class="fa fa-globe"></span></span>
+						<h3>Датасет целиком</h3>
+						<p>6 временных периодов по 6 сценариев движения камеры, 27 Гб.</p>
+						<a href="https://drive.google.com/drive/folders/1hhkvMp_VDhZep1b4oXrN1US_4wc2hZlW?usp=sharing" class="button button-style1">Скачать</a>
+					</section>
 
-			event.preventDefault();
-			
-		});
-	});
-	
-</script>
+				</div>
+			</div>
+		</div>
 
+	<!-- Main -->
+		<div id="main">
+			<div id="content" class="container">
+			<hr />
+				<header id="scenes">
+					<h2>Отдельные сцены</h2>
+				</header>
+				<div class="row">
+					<section class="6u">
+						<a href="#" class="image full"><img src="images/img01.png" alt=""></a>
+						<header>
+							<h2>Временной период: 08:30</h2>
+						</header>
+						<p>6 сценариев, 6 .svo + 6 .txt файлов, 4 Гб</p>
+						<a href="https://drive.google.com/drive/folders/1bKP3Of2EUr8OWrmqHpalqTSctnFr9gWl?usp=sharing" class="button button-style1">Скачать</a>
+					</section>				
+					<section class="6u">
+						<a href="#" class="image full"><img src="images/img02.png" alt=""></a>
+						<header>
+							<h2>Временной период: 13:00</h2>
+						</header>
+						<p>6 сценариев, 6 .svo + 6 .txt файлов, 4.6 Гб</p>
+						<a href="https://drive.google.com/drive/folders/13VC5Hoa1AilqyAEABCJJ22R4HDZlzZIk?usp=sharing" class="button button-style1">Скачать</a>
+					</section>				
+				</div>
 
-</head>
+				<div class="row">
+					<section class="6u">
+						<a href="#" class="image full"><img src="images/img03.png" alt=""></a>
+						<header>
+							<h2>Временной период: 16:30</h2>
+						</header>
+						<p>6 сценариев, 6 .svo + 6 .txt файлов, 3.8 Гб</p>
+						<a href="https://drive.google.com/drive/folders/1zUvQ-BNQKtr_4UjxWYvJ_yTWUOKM5e-L?usp=sharing" class="button button-style1">Скачать</a>
+					</section>
+					<section class="6u">
+						<a href="#" class="image full"><img src="images/img04.png" alt=""></a>
+						<header>
+							<h2>Временной период: 20:00</h2>
+						</header>
+						<p>6 сценариев, 6 .svo + 6 .txt файлов, 4.6 Гб</p>
+						<a href="https://drive.google.com/drive/folders/1eYIShKDt0SrdPjgCPbb1S0jZXCmOCUxu?usp=sharing" class="button button-style1">Скачать</a>
+					</section>				
+				</div>
+				
+				<div class="row">
+					<section class="6u">
+						<a href="#" class="image full"><img src="images/img05.png" alt=""></a>
+						<header>
+							<h2>Временной период: 22:00</h2>
+						</header>
+						<p>6 сценариев, 6 .svo + 6 .txt файлов, 4 Гб</p>
+						<a href="https://drive.google.com/drive/folders/1bW40AlPfFh1xoE3Iu0LKV1BJPDEbIbSC?usp=sharing" class="button button-style1">Скачать</a>
+					</section>				
+					<section class="6u">
+						<a href="#" class="image full"><img src="images/img06.png" alt=""></a>
+						<header>
+							<h2>Временной период: 22:30</h2>
+						</header>
+						<p>6 сценариев, 6 .svo + 6 .txt файлов, 3.8 Гб</p>
+						<a href="https://drive.google.com/drive/folders/17shqHOCYVFc-jTBboVofZAovTGDayNdm?usp=sharing" class="button button-style1">Скачать</a>
+						
+					</section>				
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			<div id="content" class="container">
+				<section id="description">
+												<hr />
+					<header>
+						<h2>Состав базы данных</h2>
+					</header>
+					<p align="justify">Созданная открытая база данных ORDSLAM (Outdoor RGB-D SLAM Dataset) была снята при помощи стереокамеры ZED. Разрешение цветных стереоизображений и карт глубины составило 1280x720 пикселей. Съемка велась с рук, без участия мобильного робота, при записи кадров камера находилась на уровне глаз наблюдателя. В качестве локации была выбрана местность с большим числом растительности в кадре (деревья и кусты), чтобы обеспечить большую структурную изменчивость сцены при движении камеры.</p>
+					<p align="justify">Перед съемкой были разработаны отдельные сценарии движения камеры с учетом разной сложности движений и разных условий съемки. Для каждого сценария были отсняты видеопоследовательности длиной от 20 до 120 секунд. Кроме изображений при съемке также сохранялась дополнительная информация в виде показаний инерциальных датчиков (Inertial Measurement Units, IMU). Каждый сценарий движения повторялся для разного времени суток, что соответствовало разной освещенности сцены: 08:30 часов, 13 часов, 16:30 часов, 20 часов, 22 часа, 22:30 часов.</p>
+					<p align="justify">Были реализованы следующие сценарии движения камеры:
+1.	Простой - камера плавно поворачивается по кругу без смещения;
+2а.	Простой - камера смещается по вертикали или горизонтали без поворота;
+2б.	Простой - камера смещается по вертикали или горизонтали без поворота с возвращением в исходную позицию;
+3.	Средний - камера приближается или отдаляется от сцены без поворота;
+4.	Сложный - плавное свободное движение камеры (смещение и поворот);
+5.	Очень сложный - свободное движение камеры с тряской, либо с сильным ветром.
+</p>							
+
+				</section>
+			</div>
+		</div>
 		
-<body>
-<div id="header">
-	<div id="logo"><a href="#"><img src="images/logo_human.png"></a></div>
-	<ul id="main-menu">
-    	<li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#connect">Connect</a></li>
-    </ul>
-</div>
+	<!-- Tweet -->
+		<div id="tweet">
+			<div class="container">
+				<section>
+					<blockquote>&ldquo;Исследование выполнено при финансовой поддержке Программы фундаментальных научных исследований государственных академий на 2013‒2020 годы (ГП-14, раздел 63), Институт физиологии им И.П. Павлова.&rdquo;</blockquote>
+				</section>
+			</div>
+		</div>
 
-<div id="container">
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<section>
+					<header>
+						<h2>Связаться с авторами</h2>
+						<span class="byline">E-mail: <a href = "mailto: sv.v.ponomarev@gmail.com">sv.v.ponomarev@gmail.com</a></span>
+					</header>
+					<ul class="contact">
+						<li><a href="https://github.com/svponomarev" class="fa fa-github"><span>Github</span></a></li>
+						<li class="active"><a href="https://www.facebook.com/sv.v.ponomarev/" class="fa fa-facebook"><span>Facebook</span></a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
 
-<!--Begin About Section-->
-    <div id="about">
-    	<h1>About</h1>
-        <ul id="top-social">
-        	<li><a href="#" class="facebook">Facebook</a></li>
-            <li><a href="#" class="twitter">Twitter</a></li>
-            <li><a href="#" class="linkedin">LinkedIn</a></li>
-        </ul>
-        <div class="top-divider"></div>
-        <div class="content">
-        	<img src="images/test.jpg" />
-            <h2>Svyatoslav Ponomarev</h2> 
-			<h3>Software Engineer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum ipsum sit amet posuere.</p> 
-            <ul id="service-icons">
-            	<li class="services-design">Design</li>
-                <li class="services-mobile">Mobile</li>
-                <li class="services-film">Film</li>
-                <li class="services-photo">Photo</li>
-            </ul>
-        </div>
-    <div class="bottom-divider"></div> 
-    </div>
-<!--End About Section-->
-
-<!--Begin Experience Section-->   
-    <div id="experience">
-    	<h1>Experience</h1>
-        <div class="top-divider"></div>
-        <div class="content">
-            <div class="col">
-            <h2>Description of Work</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum </p>
-            </div>
-            
-            <div class="col col-mid">
-            <h2>Description of Work</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum </p>
-            </div>
-            
-            <div class="col">
-            <h2>Description of Work</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum </p>
-            </div>
-        </div>    
-        <div class="bottom-divider"></div>
-    </div>
-<!--End Experience Section-->
-
-<!--Begin Work Section-->  
-    <div id="work">
-    	<h1>Work</h1>
-        <div class="top-divider"></div>
-        	<div class="content">
-            	<ul id="work-thumbs">
-                </ul>
-            </div>
-        <div class="bottom-divider"></div>
-    </div>
-<!--End Work Section-->
-
-<!--Begin Connect Section-->  
-    <div id="connect">
-    	<h1>Connect</h1>
-        <div class="top-divider"></div>
-        	<div class="content">
-            	<div id="form">
-                	<form action="#">
-                    	<span>Name</span>
-                        <input type="text" name="name" class="name" />
-                        <span>Email</span>
-                        <input type="text" name="email" class="email"/>
-                        <span>Message</span>
-                        <textarea class="message"></textarea>
-                        <input type="submit" name="submite" value="Submit" class="submit">
-                    </form>
-                </div>
-                <div id="social-footer">
-                	<h2>Follow Me:</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper </p>
-                    <ul id="sm-links">
-                    	<li><a href="#" class="facebook">Facebook</a></li>
-           				<li><a href="#" class="twitter">Twitter</a></li>
-            			<li><a href="#" class="dribble">Dribble</a></li>
-                        <li><a href="#" class="vimeo">Vimeo</a></li>
-                        <li><a href="#" class="youtube">YouTube</a></li>
-                        <li><a href="#" class="linkedin">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-    </div>
-<!--End Connect Section--> 
-
-</div>
-
-
-</body>
+	</body>
 </html>
