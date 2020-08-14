@@ -36,35 +36,51 @@
 		<div id="featured">
 			<div class="container">
 				<header>
-					<h3>База данных ORDSLAM для сравнения эффективности RGB-D SLAM алгоритмов вне помещения</h3>
-					<h4> С. В. Пономарев, С. А. Дроздов</h4>
-					<h6>Институт физиологии им. И.П. Павлова РАН, Санкт-Петербург</h6>
+					<h3>ORDSLAM database for performance comparison of RGB-D SLAM algorithms outdoors</h3>
+					<h4> S.V. Ponomarev, S.A. Drozdov</h4>
+					<h6>Pavlov Institute of physiology, Russian Academy of Science, Saint Petersburg</h6>
 				</header>
 				<p align="justify">
-				<strong>Добро пожаловать!</strong> На данной странице вы сможете скачать текущую версию датасета, снятого с помощью стереокамеры высокого разрешения <a href="https://www.stereolabs.com/zed/">ZED</a>, для сравнения точности алгоритмов одновременной локализации и построения карты местности (simultaneous localization and mapping, SLAM).</p>
+				<strong>Welcome!</strong> On this page you can download the actual version of the dataset captured with a high-resolution stereo camera <a href="https://www.stereolabs.com/zed/">ZED</a>, to compare the accuracy of algorithms for simultaneous localization and mapping (SLAM).</p>
+				<p align="justify"> A new database has been prepared to compare the effectiveness of SLAM algorithms outdoors characterized by high a priori uncertainty. The images were captured with a high-resolution stereo camera, and reference trajectories of the camera movement inside the scene were calculated using manually marked key points. The resulting image database can be used to compare the robustness of the behavior of SLAM algorithms in the open air and under complex lighting conditions.</p>
 				<p align="justify">
-				Представленный датасет описан в следующей статье: </p>
-				<p align="justify">Пономарев С.В., Дроздов С.А. База данных ORDSLAM для сравнения эффективности RGB-D SLAM алгоритмов вне помещения // Оптический журнал - 2020. - Т. 87. - № 10. <a href="https://github.com/svponomarev/svponomarev.github.io/blob/master/article/ORDSLAM_article.pdf">[PDF]</a></p>
-				<p align="justify"> Подготовлена новая база данных, позволяющая сравнить эффективность алгоритмов SLAM в условиях открытой местности, характеризующейся высокой априорной неопределенностью. Изображения отсняты с помощью стереокамеры высокого разрешения, по размеченным вручную ключевым точкам рассчитаны эталонные траектории движения камеры внутри сцены. Полученная база данных изображений может быть использована для сравнения робастности поведения SLAM-алгоритмов на открытом воздухе и в условиях сложного освещения.</p>
+				<strong>Key features: </strong></p>
+				<p align="justify">
+					<li align="justify">Outdoor environment</li>
+					<li align="justify">High-resolution stereo camera for depth map generation</li>
+					<li align="justify">Different lighting conditions (different capturing time)</li>
+					<li align="justify">6 scenarious for capturing with various difficulty</li>
+					<li align="justify">Manual markup for ground truth camera movement trajectory</li>
+				</p>  
+				<p align="justify"><strong>Citing</strong></p>
+				<p align="justify">If you find this dataset useful please cite this paper</p>
+				<blockquote align="justify">
+				Ponomarev S.V., Drozdov S.A. ORDSLAM database for performance comparison of RGB-D SLAM algorithms outdoors // Journal of Optical Technology - 2020. - V. 87. - N 10. </blockquote>
+				<p align="justify"><strong>Bibtex</strong></p>
+
+<blockquote align="justify">
+  <p>@article{ponomarev_drozdov_2020, title={ORDSLAM database for performance comparison of RGB-D SLAM algorithms outdoors}, volume={87}, number={10}, journal={Journal of Optical Technology}, author={Ponomarev, S. V. and Drozdov, S. A.}, year={2020}}</p>
+</blockquote>
+					
 				<hr />
 				<div class="row">
 					<section class="4u">
 						<span class="pennant"><span class="fa fa-file-text-o"></span></span>
-						<h3>Состав базы данных</h3>
-						<p>Описание процесса съемки. Количество изображений. Формат скачиваемых данных.</p>
-						<a href="#description" class="button button-style1">Перейти</a>
+						<h3>Dataset structure</h3>
+						<p>Description of the capturing process. Number of images. The format of the downloaded data.</p>
+						<a href="#description" class="button button-style1">Go to</a>
 					</section>
 					<section class="4u">
 						<span class="pennant"><span class="fa fa-cloud-download"></span></span>
-						<h3>Отдельные сцены</h3>
-						<p>Скачать базу данных отдельными частями, разделенными по времени съемки.</p>
-						<a href="#scenes" class="button button-style1">Перейти</a>
+						<h3>Separate scenes</h3>
+						<p>Download the database in separate parts, divided by capturing time.</p>
+						<a href="#scenes" class="button button-style1">Go to</a>
 					</section>
 					<section class="4u">
 						<span class="pennant"><span class="fa fa-globe"></span></span>
-						<h3>Датасет целиком</h3>
-						<p>6 временных периодов по 6 сценариев движения камеры, 27 Гб.</p>
-						<a href="https://drive.google.com/drive/folders/1hhkvMp_VDhZep1b4oXrN1US_4wc2hZlW?usp=sharing" class="button button-style1">Скачать</a>
+						<h3>Full dataset</h3>
+						<p>6 time periods for 6 scenarios of camera movement, 27 GB.</p>
+						<a href="https://drive.google.com/drive/folders/1hhkvMp_VDhZep1b4oXrN1US_4wc2hZlW?usp=sharing" class="button button-style1">Download</a>
 					</section>
 
 				</div>
@@ -76,24 +92,24 @@
 			<div id="content" class="container">
 			<hr />
 				<header id="scenes">
-					<h2>Отдельные сцены</h2>
+					<h2>Separate scenes</h2>
 				</header>
 				<div class="row">
 					<section class="6u">
 						<a href="#" class="image full"><img src="images/img01.png" alt=""></a>
 						<header>
-							<h2>Временной период: 08:30</h2>
+							<h2>Capturing time: 08:30</h2>
 						</header>
-						<p>6 сценариев, 6 .svo + 6 .txt файлов, 4 Гб</p>
-						<a href="https://drive.google.com/drive/folders/1bKP3Of2EUr8OWrmqHpalqTSctnFr9gWl?usp=sharing" class="button button-style1">Скачать</a>
+						<p>6 scenarios, 6 .svo + 6 .txt files, 4 GB</p>
+						<a href="https://drive.google.com/drive/folders/1bKP3Of2EUr8OWrmqHpalqTSctnFr9gWl?usp=sharing" class="button button-style1">Download</a>
 					</section>				
 					<section class="6u">
 						<a href="#" class="image full"><img src="images/img02.png" alt=""></a>
 						<header>
-							<h2>Временной период: 13:00</h2>
+							<h2>Capturing time: 13:00</h2>
 						</header>
-						<p>6 сценариев, 6 .svo + 6 .txt файлов, 4.6 Гб</p>
-						<a href="https://drive.google.com/drive/folders/13VC5Hoa1AilqyAEABCJJ22R4HDZlzZIk?usp=sharing" class="button button-style1">Скачать</a>
+						<p>6 scenarios, 6 .svo + 6 .txt files, 4.6 GB</p>
+						<a href="https://drive.google.com/drive/folders/13VC5Hoa1AilqyAEABCJJ22R4HDZlzZIk?usp=sharing" class="button button-style1">Download</a>
 					</section>				
 				</div>
 
@@ -101,18 +117,18 @@
 					<section class="6u">
 						<a href="#" class="image full"><img src="images/img03.png" alt=""></a>
 						<header>
-							<h2>Временной период: 16:30</h2>
+							<h2>Capturing time: 16:30</h2>
 						</header>
-						<p>6 сценариев, 6 .svo + 6 .txt файлов, 3.8 Гб</p>
-						<a href="https://drive.google.com/drive/folders/1zUvQ-BNQKtr_4UjxWYvJ_yTWUOKM5e-L?usp=sharing" class="button button-style1">Скачать</a>
+						<p>6 scenarios, 6 .svo + 6 .txt files, 3.8 GB</p>
+						<a href="https://drive.google.com/drive/folders/1zUvQ-BNQKtr_4UjxWYvJ_yTWUOKM5e-L?usp=sharing" class="button button-style1">Download</a>
 					</section>
 					<section class="6u">
 						<a href="#" class="image full"><img src="images/img04.png" alt=""></a>
 						<header>
-							<h2>Временной период: 20:00</h2>
+							<h2>Capturing time: 20:00</h2>
 						</header>
-						<p>6 сценариев, 6 .svo + 6 .txt файлов, 4.6 Гб</p>
-						<a href="https://drive.google.com/drive/folders/1eYIShKDt0SrdPjgCPbb1S0jZXCmOCUxu?usp=sharing" class="button button-style1">Скачать</a>
+						<p>6 scenarios, 6 .svo + 6 .txt files, 4.6 GB</p>
+						<a href="https://drive.google.com/drive/folders/1eYIShKDt0SrdPjgCPbb1S0jZXCmOCUxu?usp=sharing" class="button button-style1">Download</a>
 					</section>				
 				</div>
 				
@@ -120,18 +136,18 @@
 					<section class="6u">
 						<a href="#" class="image full"><img src="images/img05.png" alt=""></a>
 						<header>
-							<h2>Временной период: 22:00</h2>
+							<h2>Capturing time: 22:00</h2>
 						</header>
-						<p>6 сценариев, 6 .svo + 6 .txt файлов, 4 Гб</p>
-						<a href="https://drive.google.com/drive/folders/1bW40AlPfFh1xoE3Iu0LKV1BJPDEbIbSC?usp=sharing" class="button button-style1">Скачать</a>
+						<p>6 scenarios, 6 .svo + 6 .txt files, 4 GB</p>
+						<a href="https://drive.google.com/drive/folders/1bW40AlPfFh1xoE3Iu0LKV1BJPDEbIbSC?usp=sharing" class="button button-style1">Download</a>
 					</section>				
 					<section class="6u">
 						<a href="#" class="image full"><img src="images/img06.png" alt=""></a>
 						<header>
-							<h2>Временной период: 22:30</h2>
+							<h2>Capturing time: 22:30</h2>
 						</header>
-						<p>6 сценариев, 6 .svo + 6 .txt файлов, 3.8 Гб</p>
-						<a href="https://drive.google.com/drive/folders/17shqHOCYVFc-jTBboVofZAovTGDayNdm?usp=sharing" class="button button-style1">Скачать</a>
+						<p>6 scenarios, 6 .svo + 6 .txt files, 3.8 GB</p>
+						<a href="https://drive.google.com/drive/folders/17shqHOCYVFc-jTBboVofZAovTGDayNdm?usp=sharing" class="button button-style1">Download</a>
 						
 					</section>				
 				</div>
@@ -142,38 +158,29 @@
 				<section id="description">
 												<hr />
 					<header>
-						<h2>Состав базы данных</h2>
+						<h2>Dataset structure</h2>
 					</header>
-					<p align="justify">Созданная открытая база данных ORDSLAM (Outdoor RGB-D SLAM Dataset) была снята при помощи стереокамеры ZED. Разрешение цветных стереоизображений и карт глубины составило 1280x720 пикселей. Съемка велась с рук, без участия мобильного робота, при записи кадров камера находилась на уровне глаз наблюдателя. В качестве локации была выбрана местность с большим числом растительности в кадре (деревья и кусты), чтобы обеспечить большую структурную изменчивость сцены при движении камеры.</p>
-					<p align="justify">Перед съемкой были разработаны отдельные сценарии движения камеры с учетом разной сложности движений и разных условий съемки. Для каждого сценария были отсняты видеопоследовательности длиной от 20 до 120 секунд. Кроме изображений при съемке также сохранялась дополнительная информация в виде показаний инерциальных датчиков (Inertial Measurement Units, IMU). Каждый сценарий движения повторялся для разного времени суток, что соответствовало разной освещенности сцены: 08:30 часов, 13 часов, 16:30 часов, 20 часов, 22 часа, 22:30 часов.</p>
-					<p align="justify">Были реализованы следующие сценарии движения камеры:
-1.	Простой - камера плавно поворачивается по кругу без смещения;
-2а.	Простой - камера смещается по вертикали или горизонтали без поворота;
-2б.	Простой - камера смещается по вертикали или горизонтали без поворота с возвращением в исходную позицию;
-3.	Средний - камера приближается или отдаляется от сцены без поворота;
-4.	Сложный - плавное свободное движение камеры (смещение и поворот);
-5.	Очень сложный - свободное движение камеры с тряской, либо с сильным ветром.
+					<p align="justify">The created open database ORDSLAM (Outdoor RGB-D SLAM Dataset) was captured using a ZED stereo camera. The resolution of color stereo images and depth maps was 1280x720 pixels. The shooting was carried out with hands, without the participation of a mobile robot, when recording frames, the camera was at the eye level of the observer. An area with a large amount of vegetation in the frame (trees and bushes) was chosen as the location in order to provide greater structural variability of the scene when the camera was moving.</p>
+					<p align="justify">Before shooting, separate scenarios of camera movement were developed, taking into account different complexity of movements and different shooting conditions. For each scenario, video sequences of 20 to 120 seconds in length were filmed. In addition to images, additional information was also saved during shooting in the form of readings of inertial sensors (Inertial Measurement Units, IMU). Each scenario of movement was repeated for different times of the day, which corresponded to different illumination of the scene: 08:30 hours, 13 hours, 16:30 hours, 20 hours, 22 hours, 22:30 hours.</p>
+					<p align="justify">The following scenarios of camera movement were captured:
+1.	Simple - the camera rotates smoothly in a circle without shifting;
+2а.	Simple - the camera moves vertically or horizontally without rotation;
+2b.	Simple - the camera moves vertically or horizontally without rotation, returning to its original position;
+3.	Medium - the camera zooms in or out of the scene without rotation;
+4.	Difficult - smoothed free camera movement (shift and rotation);
+5.	Very difficult - free movement of the camera with shaking or strong wind.
 </p>							
 
 				</section>
 			</div>
 		</div>
 		
-	<!-- Tweet -->
-		<div id="tweet">
-			<div class="container">
-				<section>
-					<blockquote>&ldquo;Исследование выполнено при финансовой поддержке Программы фундаментальных научных исследований государственных академий на 2013‒2020 годы (ГП-14, раздел 63), Институт физиологии им И.П. Павлова.&rdquo;</blockquote>
-				</section>
-			</div>
-		</div>
-
 	<!-- Footer -->
 		<div id="footer">
 			<div class="container">
 				<section>
 					<header>
-						<h2>Связаться с авторами</h2>
+						<h2>Contact the authors</h2>
 						<span class="byline">E-mail: <a href = "mailto: sv.v.ponomarev@gmail.com">sv.v.ponomarev@gmail.com</a></span>
 					</header>
 					<ul class="contact">
