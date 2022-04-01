@@ -2,14 +2,15 @@
 layout: default
 ---
 
-<div class="row g-5 mb-5 intro-row">
+<div class="g-5" style="text-align: justify;">
 
   
   <div class="row clearfix about-container" >
 	  <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 no-print">
-			<span class="profile-img" style="background-image: url({{ site.github.url }}/assets/img/avatar2.jpg)"></span>
+
+			<img class="img-fluid profile-img" src="{{ site.github.url }}/assets/img/avatar2.jpg" alt="">
 	  </div>
-	  <div class="col col-xs-12 col-sm col-md-6 col-lg-6" style="text-align: justify">
+	  <div class="col col-xs-12 col-sm col-md-6 col-lg-6">
 		  <h3 class="fw-bold" align="center">About Me</h3>
 		{{ content }}
 	  </div>

@@ -19,7 +19,7 @@
   description: 'Junior Researcher'
   years: 'July 2017 - December 2020'
   content: '<ul> <li>Achieved 79% accuracy for automatic classification of visual stimuli based on electroencephalogram analysis and SVM training with wavelet-based features [<mark>Matlab</mark>]</li>
-  <li>Capturing and creation of an openly available ORDSLAM database to compare the performance of RGB-D SLAM algorithms outdoors [[<mark>C++</mark>, <mark>OpenCV</mark>]</li> 
+  <li>Capturing and creation of an openly available ORDSLAM database to compare the performance of RGB-D SLAM algorithms outdoors [<mark>C++</mark>, <mark>OpenCV</mark>]</li> 
   </ul>'
   
 - title: 'My Sales Team'

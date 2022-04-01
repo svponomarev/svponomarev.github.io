@@ -10,8 +10,8 @@
 		<p><b>Facebook:</b> <a href="https://www.facebook.com/{{contact.fb}}">{{ contact.fb }}</a></p>
         <p><b>VK:</b> <a href="https://vk.com/{{contact.vk}}">{{ contact.vk }}</a></p>
       </div>
-	  <div class="col-md-6">
-		<span class="round-img" style="background-image: url({{ site.github.url }}/{{ contact.image }})"></span>
+	  <div class="col-md-6 xs-auto">
+		<img class="img-fluid round-img" src="{{ site.github.url }}/{{ contact.image }}" alt="">
       </div>
     </div>
     {% endfor %}
