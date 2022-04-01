@@ -1,0 +1,18 @@
+menu:
+- {name: 'projects', url: '/projects'}
+- {name: 'publications', url: '/publications'}
+- {name: 'cv', url: '/cv'}
+- {name: 'contact', url: '/contact'}
+
+projects:
+- {name: 'ArtFaceApp', url: 'artfaceapp', description: 'Web application combining face matching and arbitrary style transfer in order to learn more about the culture and the people of XX century.'}
+- {name: 'ORDSLAM', url: 'ordslam', description: 'Outdoor RGB-D SLAM Dataset for performance comparison of RGB-D SLAM algorithms outdoors.'}
+- {name: 'Volna Project', url: 'volna', description: 'Mobile application that allows to visualize muscle imbalance based on the model of "anatomical trains" and get acquainted with an individual program of exercises aimed at improving the economy and quality of movement.'}
+
+social:
+- {icon: 'github', link: 'https://github.com/svponomarev'}
+- {icon: 'twitter', link: 'https://twitter.com/slavs2006'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/svyatoslav-ponomarev-77a58a9a/'}
+
+contacts:
+- {location: 'Saint Petersburg, Russia', email: 'sv.v.ponomarev@gmail.com', fb: 'sv.v.ponomarev', vk: 'sv.v.ponomarev', linkedin: 'https://www.linkedin.com/in/svyatoslav-ponomarev-77a58a9a/', image: 'assets/img/contact.jpg'}

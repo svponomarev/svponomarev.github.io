@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="container list-container">
+  <div>
+    <h3 class="cv-header pb-3 mb-5">Projects</h3>
+    {% for project in site.data.settings.projects %}
+
+		   {% if forloop.last == true %}
+		   <div class="row clearfix layout layout-top-middle border-no">
+		   {% else %}
+		   <div class="row clearfix layout layout-top-middle border-weak">
+		   {% endif %}
+			<div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details xs-auto">
+				<a class="navbold" href="{{ site.github.url }}/projects/{{ project.url}}"><h4>{{ project.name }}</h4> </a>
+				<p class="quote">{{ project.description }}</p>
+				<p>
+				</p>
+			</div>
+		</div>
+	
+	
+    {% endfor %}
+  </div>
+</div>

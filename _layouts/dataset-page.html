@@ -1,0 +1,143 @@
+---
+layout: default
+---
+
+<div id="featured">
+	<div class="container">
+		<header class="mb-3 border-bottom">
+			<h3 align="center">ORDSLAM database for performance comparison of RGB-D SLAM algorithms outdoors</h3>
+			<h4 align="center"> S.V. Ponomarev, S.A. Drozdov</h4>
+			<h6 align="center">Pavlov Institute of physiology, Russian Academy of Science, Saint Petersburg</h6>
+		</header>
+		<div id="header" style="background-image: url({{ site.github.url }}/assets/img/header_zed.png)">
+			<div id="logo">
+				<h1><a href="#">ORDSLAM</a></h1>
+				<span class="tag">Outdoor RGB-D SLAM Dataset</span>
+			</div>
+		</div>
+		<p align="justify">
+		<strong>Welcome!</strong> On this page you can download the actual version of the dataset captured with a high-resolution stereo camera <a href="https://www.stereolabs.com/zed/">ZED</a>, to compare the accuracy of algorithms for simultaneous localization and mapping (SLAM).</p>
+		<p align="justify"> A new database has been prepared to compare the effectiveness of SLAM algorithms outdoors characterized by high a priori uncertainty. The images were captured with a high-resolution stereo camera, and reference trajectories of the camera movement inside the scene were calculated using manually marked key points. The resulting image database can be used to compare the robustness of the behavior of SLAM algorithms in the open air and under complex lighting conditions.</p>
+		<p align="justify">
+		<strong>Key Features: </strong></p>
+		<p align="justify">
+			<li align="justify">Outdoor environment</li>
+			<li align="justify">High-resolution stereo camera for depth map generation</li>
+			<li align="justify">Different lighting conditions (different capturing time)</li>
+			<li align="justify">6 scenarious for capturing with various difficulty</li>
+			<li align="justify">Manual markup for ground truth camera movement trajectory</li>
+		</p>  
+		<p align="justify"><strong>Citing</strong></p>
+		<p align="justify">If you find this dataset useful please cite this paper</p>
+		<blockquote align="justify">
+		Ponomarev S.V., Drozdov S.A. ORDSLAM database for performance comparison of RGB-D SLAM algorithms outdoors // Journal of Optical Technology - 2020. - V. 87. - N 10. </blockquote>
+		<p align="justify"><strong>Bibtex</strong></p>
+		<blockquote align="justify">
+		<p>@article{ponomarev_drozdov_2020, title={ORDSLAM database for performance comparison of RGB-D SLAM algorithms outdoors}, volume={87}, number={10}, journal={Journal of Optical Technology}, author={Ponomarev, S. V. and Drozdov, S. A.}, year={2020}}</p>
+		</blockquote>
+		<hr />
+		<div class="row">
+			<section class="4u">
+				<h3>Dataset Structure</h3>
+				<p align="justify">The created open database ORDSLAM (Outdoor RGB-D SLAM Dataset) was captured using a ZED stereo camera. The resolution of color stereo images and depth maps was 1280x720 pixels. The shooting was carried out with hands, without the participation of a mobile robot, when recording frames, the camera was at the eye level of the observer. An area with a large amount of vegetation in the frame (trees and bushes) was chosen as the location in order to provide greater structural variability of the scene when the camera was moving.</p>
+				<p align="justify">Before shooting, separate scenarios of camera movement were developed, taking into account different complexity of movements and different shooting conditions. For each scenario, video sequences of 20 to 120 seconds in length were filmed. In addition to images, additional information was also saved during shooting in the form of readings of inertial sensors (Inertial Measurement Units, IMU). Each scenario of movement was repeated for different times of the day, which corresponded to different illumination of the scene: 08:30 hours, 13 hours, 16:30 hours, 20 hours, 22 hours, 22:30 hours.</p>
+				<p align="justify">The following scenarios of camera movement were captured:
+				<ol>
+					<li>Simple - the camera rotates smoothly in a circle without shifting; </li>
+					<li>Simple - the camera moves vertically or horizontally without rotation; </li>
+					<li>Simple - the camera moves vertically or horizontally without rotation, returning to its original position; </li>
+					<li>Medium - the camera zooms in or out of the scene without rotation; </li>
+					<li>Difficult - smoothed free camera movement (shift and rotation); </li>
+					<li>Very difficult - free movement of the camera with shaking or strong wind. </li>
+				<ol>
+				</p>	
+			</section>
+		</div>
+	</div>
+</div>
+
+	<!-- Main -->
+<div id="main">
+	<div id="content" class="container mb-3 border-bottom">
+	<hr />
+		<header id="scenes">
+			<h2>Separate Scenes</h2>
+			<p>Download the database in separate parts, divided by capturing time.</p>
+		</header>
+		<div class="row"> 
+			 <div class="col-md-6 col-sm-6 text-center">
+				<section class="6u">
+					<header>
+						<h4>Capturing time: 08:30</h4>
+					</header>
+					<img class="img-fluid mb-2" src="images/img01.png" alt="">
+					<a href="https://drive.google.com/drive/folders/1bKP3Of2EUr8OWrmqHpalqTSctnFr9gWl?usp=sharing" class="button button-style1 mb-1">Download</a>
+					<p>6 scenarios, 6 .svo + 6 .txt files, 4 GB</p>
+				</section>
+			</div>
+			<div class="col-md-6 col-sm-6 text-center">
+				<section class="6u">
+					<header>
+						<h4>Capturing time: 13:00</h4>
+					</header>
+					<img class="img-fluid mb-2" src="images/img02.png" alt="">
+					<a href="https://drive.google.com/drive/folders/13VC5Hoa1AilqyAEABCJJ22R4HDZlzZIk?usp=sharing" class="button button-style1 mb-1">Download</a>
+					<p>6 scenarios, 6 .svo + 6 .txt files, 4.6 GB</p>
+				</section>		
+			</div>
+			<br class="mt-5"/>
+			<div class="col-md-6 col-sm-6 text-center">
+				<section class="6u">
+				<header>
+					<h4>Capturing time: 16:30</h4>
+				</header>
+				<img class="img-fluid mb-2" src="images/img03.png" alt="">
+				<a href="https://drive.google.com/drive/folders/1zUvQ-BNQKtr_4UjxWYvJ_yTWUOKM5e-L?usp=sharing" class="button button-style1 mb-1">Download</a>
+				<p>6 scenarios, 6 .svo + 6 .txt files, 3.8 GB</p>
+			</section>
+			</div>
+			<div class="col-md-6 col-sm-6 text-center">
+				<section class="6u">
+				<header>
+					<h4>Capturing time: 20:00</h4>
+				</header>
+				<img class="img-fluid mb-2" src="images/img04.png" alt="">
+				<a href="https://drive.google.com/drive/folders/1eYIShKDt0SrdPjgCPbb1S0jZXCmOCUxu?usp=sharing" class="button button-style1 mb-1">Download</a>
+				<p>6 scenarios, 6 .svo + 6 .txt files, 4.6 GB</p>
+			</section>	
+			</div>
+			<div class="col-md-6 col-sm-6 text-center">
+				<section class="6u">
+				<header>
+					<h4>Capturing time: 22:00</h4>
+				</header>
+				<img class="img-fluid mb-2" src="images/img05.png" alt="">
+				<a href="https://drive.google.com/drive/folders/1bW40AlPfFh1xoE3Iu0LKV1BJPDEbIbSC?usp=sharing" class="button button-style1 mb-1">Download</a>
+				<p>6 scenarios, 6 .svo + 6 .txt files, 4 GB</p>
+			</section>	
+			</div>
+			<div class="col-md-6 col-sm-6 text-center">
+				<section class="6u">
+				<header>
+					<h4>Capturing time: 22:30</h4>
+				</header>
+				<img class="img-fluid mb-2" src="images/img06.png" alt="">
+				<a href="https://drive.google.com/drive/folders/17shqHOCYVFc-jTBboVofZAovTGDayNdm?usp=sharing" class="button button-style1 mb-1">Download</a>
+				<p>6 scenarios, 6 .svo + 6 .txt files, 3.8 GB</p>
+			</section>	
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+<div class="row"> 
+<h3>Full dataset</h3>
+<div class="col-md-12 col-sm-12 text-center">
+<img class="img-fluid mb-2" src="images/full.png" alt=""> <br/>
+<a href="https://drive.google.com/drive/folders/1hhkvMp_VDhZep1b4oXrN1US_4wc2hZlW?usp=sharing" class="button button-style1 mb-1">Download</a>
+<p>6 time periods for 6 scenarios of camera movement, 27 GB.</p>
+</div>
+</div>
+

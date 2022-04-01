@@ -1,0 +1,46 @@
+- title: 'Huawei department, Ventra Employment'
+  description: 'Senior Engineer'
+  years: 'February 2020 - Present'
+  content: '<ul> <li>Developed fast and robust algorithms for detection and removal of flickering caused by LED captured under short exposure time [<mark>Python</mark>, <mark>C++</mark>, <mark>OpenCV</mark>] </li>
+    <li>Single camera, stereo camera, camera + IMU systems calibration, calculation of optical systems parameters for generation of more realistic synthetic images [<mark>C++</mark>, <mark>OpenCV</mark>, <mark>Matlab</mark>]</li>
+    <li>Managed a team of 2 people to prepare photorealistic synthetic scenes and generate training set of images with supplemental data (optical flows, occlusion maps)</li>
+    <li>Improved detail/color transfer neural networks accuracy by developing procedural pipeline for photorealistic training images generation for system of cameras with different optical parameters [<mark>Python</mark>, <mark>PyTorch</mark>, <mark>Blender</mark>] </li>
+    <li>Improved robustness of video stabilization by developing global motion estimation algorithms modifications [<mark>Python</mark>, <mark>OpenCV</mark>] </li>
+  </ul>'
+
+- title: 'Huawei Technologies Co. Ltd.'
+  description: 'Individual Businessman Contractor'
+  years: 'August 2018 - January 2020'
+  content: '<ul> <li>Improved visual quality of images captured in low light conditions by developing RGB+NIR images merging/fusion algorithm [<mark>Python</mark>, <mark>OpenCV</mark>]</li>
+  <li>Development of color restoration algorithms in case of low light capturing conditions [<mark>C++</mark>, <mark>OpenCV</mark>]</li> 
+  </ul>'
+  
+- title: 'Pavlov Institute of Physiology, Russian Academy of Science'
+  description: 'Junior Researcher'
+  years: 'July 2017 - December 2020'
+  content: '<ul> <li>Achieved 79% accuracy for automatic classification of visual stimuli based on electroencephalogram analysis and SVM training with wavelet-based features [<mark>Matlab</mark>]</li>
+  <li>Capturing and creation of an openly available ORDSLAM database to compare the performance of RGB-D SLAM algorithms outdoors [[<mark>C++</mark>, <mark>OpenCV</mark>]</li> 
+  </ul>'
+  
+- title: 'My Sales Team'
+  description: 'Researcher (freelance)'
+  years: 'September 2015 - February 2016'
+  content: '<ul> <li>Developed a goods counting system on store shelves with average recognition accuracy of 85% per goods category [<mark>C++</mark>, <mark>OpenCV</mark>]</li>
+  <li>Managed a team of 2 people to conduct a study of object classification algorithms for goods images in stores</li> 
+  </ul>'
+  
+- title: 'Vavilov State Optical Institute'
+  description: 'Software Engineer'
+  years: 'September 2013 - July 2017'
+  content: '<ul> <li>Engaged in the development of system for determining the orientation of the observed object in 3D space using stereo vision methods [<mark>C++</mark>, <mark>OpenCV</mark>, <mark>OpenGL</mark>, <mark>PCL</mark>]</li>
+  <li>GUI development for monitoring program of malfunction of electrical equipment and writing the functional specification [<mark>C++</mark>, <mark>Qt</mark>]</li> 
+  <li>Development of framework for the performance estimation of object recognition algorithms which speeded up neural network training process  [<mark>C++</mark>, <mark>Python</mark>, <mark>Caffe</mark>]</li> 
+  <li>Development of mobile phone video recording effects simulation system (blur, rolling shutter effects) [<mark>C++</mark>, <mark>OpenCV</mark>]</li>
+  </ul>'
+
+- title: 'ITMO University'
+  description: 'Engineer'
+  years: 'October 2012 - June 2013'
+  content: '<ul> <li>Improved biometric identification accuracy using 2D and 3D face images by developing modification of stereo vision algorithms  [<mark>C++</mark>, <mark>OpenCV</mark>]</li>
+  </ul>'
+

@@ -1,0 +1,30 @@
+<div class="row g-5 mb-5">
+  <div>
+    {% if page.title == "Home" %}<h3 class="fw-bold border-bottom pb-3 mb-5"> Selected Publications </h3> {% endif %}
+    {% if page.title == "Home" %}
+	<ul>
+      {% for item in site.data.publications.featured %}
+       <li> <p>{{ item.name }} <a href="{{ item.url }}">[link]</a>
+	   {% if item.pdf != ''%}
+	   <a href="{{ item.pdf }}"> [pdf]</a>
+	   {% endif %}
+	   
+	   </p> </li>
+      {% endfor %}
+	</ul>
+    {% else %}
+	<ol>
+	<h4 class="border-bottom pb-3"> Publications in English (Scopus, Web of Science) </h4>
+      {% for item in site.data.publications.index %}
+        <li> <p>{{ item.name }} <a href="{{ item.url }}">[link]</a></p> </li>
+      {% endfor %}
+	</ol>
+	<ol>
+	  <h4 class="border-bottom pb-3 pt-3"> Publications in Russian </h4>
+	  {% for item in site.data.publications.russian %}
+        <li> <p>{{ item.name }} <a href="{{ item.url }}">[link]</a></p> </li>
+      {% endfor %}
+	</ol>
+    {% endif %}
+  </div>
+</div>

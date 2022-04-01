@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="container list-container">
+  <div>
+    <h3 class="cv-header">Professional Experience</h3>
+    {% for section in site.data.cv.professional-experience %}
+    {% if forloop.last == true %}
+   <div class="row clearfix layout layout-left border-no">
+   {% else %}
+   <div class="row clearfix layout layout-left border-weak">
+   {% endif %}
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>{{ section.title }}</h4><p><b>{{ section.description }}</b></p><p>{{ section.years }}</p><p class="no-print aditional-links">
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"> {{ section.content }}
+    </div>
+  </div>
+  {% if forloop.last == true %}
+  <br/><br/>
+   {% endif %}
+  {% endfor %}
+  
+  <h3 class="cv-header">Education</h3>
+  {% for section in site.data.cv.education %}
+  {% if forloop.last == true %}
+   <div class="row clearfix layout layout-left border-no">
+   {% else %}
+   <div class="row clearfix layout layout-left border-weak">
+   {% endif %}
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>{{ section.title }}</h4><p><b>{{ section.description }}</b></p><p>{{ section.years }}</p><p class="no-print aditional-links">
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"> {{ section.content }}
+    </div>
+  </div>
+  {% endfor %}  
+  </div>
+</div>
+
+
+
+  
