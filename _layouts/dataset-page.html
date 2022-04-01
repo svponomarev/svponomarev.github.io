@@ -9,12 +9,18 @@ layout: default
 			<h4 align="center"> S.V. Ponomarev, S.A. Drozdov</h4>
 			<h6 align="center">Pavlov Institute of physiology, Russian Academy of Science, Saint Petersburg</h6>
 		</header>
-		<div id="header" style="background-image: url({{ site.github.url }}/assets/img/header_zed.png)">
-			<div id="logo">
+		<div id="header">
+		<img class="img-fluid mb-2" src="{{ site.github.url }}/assets/img/header_zed.png" alt="">
+			<div id="logo" class="text-center">
+				<div id="vcenter">
 				<h1><a href="#">ORDSLAM</a></h1>
 				<span class="tag">Outdoor RGB-D SLAM Dataset</span>
+				</div>
 			</div>
 		</div>
+		
+
+		
 		<p align="justify">
 		<strong>Welcome!</strong> On this page you can download the actual version of the dataset captured with a high-resolution stereo camera <a href="https://www.stereolabs.com/zed/">ZED</a>, to compare the accuracy of algorithms for simultaneous localization and mapping (SLAM).</p>
 		<p align="justify"> A new database has been prepared to compare the effectiveness of SLAM algorithms outdoors characterized by high a priori uncertainty. The images were captured with a high-resolution stereo camera, and reference trajectories of the camera movement inside the scene were calculated using manually marked key points. The resulting image database can be used to compare the robustness of the behavior of SLAM algorithms in the open air and under complex lighting conditions.</p>
