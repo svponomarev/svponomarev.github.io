@@ -12,7 +12,7 @@ projects:
 social:
 - {icon: 'github', link: 'https://github.com/svponomarev'}
 - {icon: 'twitter', link: 'https://twitter.com/slavs2006'}
-- {icon: 'linkedin', link: 'https://www.linkedin.com/in/svyatoslav-ponomarev-77a58a9a/'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/sviatoslav-ponomarev/'}
 
 contacts:
 - {location: 'Saint Petersburg, Russia', email: 'sv.v.ponomarev@gmail.com', fb: 'sv.v.ponomarev', vk: 'sv.v.ponomarev', linkedin: 'https://www.linkedin.com/in/svyatoslav-ponomarev-77a58a9a/', image: 'assets/img/contact.jpg'}
