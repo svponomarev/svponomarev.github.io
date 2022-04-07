@@ -4,9 +4,8 @@
     {% for contact in site.data.settings.contacts %}
     <div class="row g-5 pt-3">
 	      <div class="col-md-6 mx-auto">
-        <p>{{ contact.location }}</p>
         <p><b>Email:</b> <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
-		<p><b>LinkedIn:</b> <a href="{{ contact.linkedin }}">sviatoslav-ponomarev</a> </p>
+		<p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/{{contact.linkedin}}">{{ contact.linkedin }}</a> </p>
 		<p><b>Facebook:</b> <a href="https://www.facebook.com/{{contact.fb}}">{{ contact.fb }}</a></p>
         <p><b>VK:</b> <a href="https://vk.com/{{contact.vk}}">{{ contact.vk }}</a></p>
       </div>
